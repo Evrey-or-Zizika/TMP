@@ -132,3 +132,4 @@ main *--> Variant
 main --Game
 @enduml
 ```
+![5](https://github.com/Evrey-or-Zizika/TMP/blob/main/lab%20%203.png)
