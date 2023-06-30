@@ -86,3 +86,51 @@ node Управляющий
 @enduml
 ```
 ![4](https://github.com/Evrey-or-Zizika/TMP/blob/main/lab%20%202_1.png)
+# Практика 3
+```
+@startuml
+title Пратическая работа 3: Strategy
+class Variant{
+selection()
+}
+class Game{
+strategy: Variant
+init()
+play()
+}
+
+class Paper{
+selection()
+}
+class Rock{
+selection()
+}
+class Scissors{
+selection()
+}
+class Bottle{
+selection()
+}
+class Hand{
+selection()
+}
+class main{
+int n
+str vibor
+playtime()
+player1.play(player2)
+}
+note right of main::"playtime()"
+player1 = playtime(vibor)
+player2 = playtime(vibor)
+end note
+
+Paper --> Variant
+Rock --> Variant
+Scissors --> Variant
+Bottle --> Variant
+Hand --> Variant
+main *--> Variant
+main --Game
+@enduml
+```
