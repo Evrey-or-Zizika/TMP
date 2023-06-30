@@ -179,3 +179,4 @@ France -  Germany
 (France, Germany) - colors:Задает цвет
 @enduml
 ```
+![6](https://github.com/Evrey-or-Zizika/TMP/blob/main/lab%20%203_1.png)
