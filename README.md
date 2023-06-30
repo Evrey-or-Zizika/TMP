@@ -48,3 +48,4 @@ class сдать_книгу{
 сдать_книгу --> выполнение_действия
 @enduml
 ```
+![2](https://github.com/Evrey-or-Zizika/TMP/blob/main/lab%20%201_1.png)
