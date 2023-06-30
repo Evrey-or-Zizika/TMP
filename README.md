@@ -85,3 +85,4 @@ node Управляющий
 Управляющий - Читатель: выдает книги
 @enduml
 ```
+![4](https://github.com/Evrey-or-Zizika/TMP/blob/main/lab%20%202_1.png)
