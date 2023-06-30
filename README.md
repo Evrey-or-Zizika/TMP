@@ -247,3 +247,4 @@ Iterator.Concrete_Iterator ..> Iterator.Iterator
 Iterator.Concrete_Aggregate ..> Iterator.Aggregate
 @enduml
 ```
+![7](https://github.com/Evrey-or-Zizika/TMP/blob/main/lab%20%204.png)
