@@ -71,3 +71,4 @@ activate Читатель
 Управляющий -> Читатель:выдача или принятие книги
 @enduml
 ```
+![3](https://github.com/Evrey-or-Zizika/TMP/blob/main/lab%20%202.png)
