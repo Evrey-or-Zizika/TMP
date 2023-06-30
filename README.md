@@ -618,6 +618,14 @@ print(id(SUBJECT))
 print(SUBJECT.request())
 print(SUBJECT.request())
 ```
+Вывод:
+```
+2205250727760
+pulling data from RealSubject
+[1, 2, 3]
+pulling data from Proxy cache
+[1, 2, 3]
+```
 ```
 from abc import ABCMeta, abstractmethod
 class IComponent(metaclass=ABCMeta):
