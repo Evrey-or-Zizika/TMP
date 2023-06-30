@@ -686,6 +686,19 @@ print(f"COMPOSITE_2\tid:{id(COMPOSITE_2)}")
 COMPOSITE_1.attach(LEAF_A)
 COMPOSITE_2.attach(LEAF_A)
 COMPOSITE_2.attach(COMPOSITE_1)
+```
+Вывод
+```
+LEAF_A          id:2839341415824
+LEAF_B          id:2839341415888
+COMPOSITE_1     id:2839341415952
+COMPOSITE_2     id:2839341416016
+
+<Leaf>          id:2839341415888        Parent: None
+<Composite>     id:2839341416016        Parent: None    Components:2
+<Leaf>          id:2839341415824        Parent: 2839341416016
+<Composite>     id:2839341415952        Parent: 2839341416016   Components:0
+```
 print()
 LEAF_B.method()  
 COMPOSITE_2.method() 
