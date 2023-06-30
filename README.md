@@ -344,3 +344,4 @@ Visitor.Studying_In_Institute <|.. Visitor.Instructor
 Visitor.Studying_In_Institute <|.. Visitor.Student
 @enduml
 ```
+![8](https://github.com/Evrey-or-Zizika/TMP/blob/main/lab%20%204_1.png)
