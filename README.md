@@ -49,3 +49,4 @@ class сдать_книгу{
 @enduml
 ```
 ![2](https://github.com/Evrey-or-Zizika/TMP/blob/main/lab%20%201_1.png)
+# Практика 2
