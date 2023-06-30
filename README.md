@@ -72,3 +72,16 @@ activate Читатель
 @enduml
 ```
 ![3](https://github.com/Evrey-or-Zizika/TMP/blob/main/lab%20%202.png)
+```
+@startuml
+left to right direction
+title диаграмма развертывания
+database Заявка
+node Читатель
+node Управляющий
+Управляющий - Читатель: оценивает
+Управляющий - Заявка: оценивает.    
+Читатель - Заявка: подает
+Управляющий - Читатель: выдает книги
+@enduml
+```
