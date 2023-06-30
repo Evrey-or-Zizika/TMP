@@ -98,7 +98,6 @@ strategy: Variant
 init()
 play()
 }
-
 class Paper{
 selection()
 }
@@ -124,7 +123,6 @@ note right of main::"playtime()"
 player1 = playtime(vibor)
 player2 = playtime(vibor)
 end note
-
 Paper --> Variant
 Rock --> Variant
 Scissors --> Variant
