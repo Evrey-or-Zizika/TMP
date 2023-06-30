@@ -17,4 +17,4 @@ rectangle информационная_система_библиотеки {
 }
 @enduml
 ```
-![1](https://github.com/Evrey-or-Zizika/TMP/blob/main/lab1.png)
+![1]([https://github.com/Evrey-or-Zizika/TMP/blob/main/lab1.png](https://github.com/Evrey-or-Zizika/TMP/blob/main/lab%201.png)https://github.com/Evrey-or-Zizika/TMP/blob/main/lab%201.png)
