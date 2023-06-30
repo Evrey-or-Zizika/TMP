@@ -248,3 +248,99 @@ Iterator.Concrete_Aggregate ..> Iterator.Aggregate
 @enduml
 ```
 ![7](https://github.com/Evrey-or-Zizika/TMP/blob/main/lab%20%204.png)
+```
+class Studying_In_Institute:
+ 
+    def accept(self, visitor):
+        visitor.visit(self)
+ 
+    def teaching(self, visitor):
+        print(self, "Taught by ", visitor)
+ 
+    def studying(self, visitor):
+        print(self, "studied by ", visitor)
+ 
+    def __str__(self):
+        return self.__class__.__name__
+ 
+class SDE(Studying_In_Institute): pass
+ 
+class STL(Studying_In_Institute): pass
+ 
+class DSA(Studying_In_Institute): pass
+ 
+class Visitor:
+ 
+    def __str__(self):
+        return self.__class__.__name__
+ 
+class Instructor(Visitor):
+    def visit(self, crop):
+        crop.teaching(self)
+ 
+ 
+class Student(Visitor):
+    def visit(self, crop):
+        crop.studying(self)
+ 
+sde = SDE()
+stl = STL()
+dsa = DSA()
+ 
+instructor = Instructor()
+student = Student()
+ 
+sde.accept(instructor)
+sde.accept(student)
+ 
+stl.accept(instructor)
+stl.accept(student)
+ 
+dsa.accept(instructor)
+dsa.accept(student)
+```
+Вывод:
+```
+SDE Taught by  Instructor
+SDE studied by  Student
+STL Taught by  Instructor
+STL studied by  Student
+DSA Taught by  Instructor
+DSA studied by  Student
+```
+```
+@startuml
+interface Visitor.Studying_In_Institute {
++ void accept()
++ void teaching()
++ void studying()
+}
+class Visitor.Instructor {
++ void visit()
++ void teaching()
+}
+class Visitor.Student {
++ void visit()
++ void studying()
+}
+class Visitor.SDE {
++ void create(ProjectClass)
++ void create(DataBase)
++ void create(Test)
+}
+class Visitor.STL {
++ void beWritten(Developer)
+}
+class Visitor.DSA {
++ {static} void main(String[])
+}
+Visitor.DSA <|.. Visitor.Student
+Visitor.DSA <|.. Visitor.Instructor
+Visitor.SDE <|.. Visitor.Student
+Visitor.SDE <|.. Visitor.Instructor
+Visitor.STL <|.. Visitor.Student
+Visitor.STL <|.. Visitor.Instructor
+Visitor.Studying_In_Institute <|.. Visitor.Instructor
+Visitor.Studying_In_Institute <|.. Visitor.Student
+@enduml
+```
